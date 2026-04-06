@@ -29,6 +29,3 @@ Ao final da execução, o programa gera um extrato detalhado contendo:
 1. Clone o repositório.
 2. Execute o arquivo: `python proj_bank_investment_simulator.py`
 3. Insira os dados solicitados (Aporte, Taxa anual, Prazo).
-
-## 📊 Exemplo de Saída
-![Resultado da Simulação](./result_proj_bank.png)
