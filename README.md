@@ -1,21 +1,34 @@
-🏦 Projeto: Simulador de Investimento Bancário (Renda Fixa)
+# 🏦 Projeto: Simulador de Investimento Bancário (Renda Fixa)
 
-Este projeto simula um sistema real de investimentos em Renda Fixa (como CDB ou Tesouro Direto), focado na precisão financeira exigida pelo setor bancário brasileiro.
+Este projeto simula um sistema real de investimentos...
 
-🛠️ Diferenciais Técnicos e Regras de Negócio
+## 🛠️ Diferenciais Técnicos e Regras de Negócio
 
-Equivalência de Juros Compostos: O sistema utiliza a fórmula de conversão de taxa anual para mensal via regime composto: $taxa\_mensal = (1 + taxa\_anual / 100)^{1/12} - 1$.
-Simulação de Aportes Mensais: Implementação de laço for para calcular o rendimento acumulado de depósitos recorrentes ao longo do tempo.
-Tabela Regressiva de IR: Aplicação automática da alíquota de Imposto de Renda (22.5% a 15%) de acordo com o prazo do investimento.
-Base de Cálculo de Imposto Real: O cálculo do IR é realizado exclusivamente sobre o Lucro Bruto (Rendimento), preservando o capital investido pelo usuário conforme a legislação vigente.
+* **Equivalência de Juros Compostos**: O sistema utiliza a fórmula de conversão de taxa anual para mensal via regime composto:
 
-💻 Demonstração de Resultados
+$$taxa\_mensal = (1 + \frac{taxa\_anual}{100})^{\frac{1}{12}} - 1$$
+
+* **Simulação de Aportes Mensais**: Implementação de laço `for`...
+* **Tabela Regressiva de IR**: Aplicação automática...
+* **Base de Cálculo de Imposto Real**: O cálculo do IR é realizado...
+
+## 💻 Demonstração de Resultados
+
 Ao final da execução, o programa gera um extrato detalhado contendo:
-1 - Total Investido: Soma de todos os aportes realizados.
 
-2 - Lucro Bruto: Valor total acumulado menos o capital investido.
+1. **Total Investido**: Soma de todos os aportes realizados.
+2. **Lucro Bruto**: Valor total acumulado menos o capital investido.
+3. **Imposto Retido**: Valor deduzido apenas sobre o rendimento.
+4. **Valor Líquido Total**: Saldo final disponível para resgate.
 
-3 - Imposto Retido: Valor deduzido apenas sobre o rendimento.
+## 🛠️ Tecnologias Utilizadas
+* Python 3.x
+* Markdown para Documentação
 
-4 - Valor Líquido Total: Saldo final disponível para resgate.
+## 🚀 Como Executar
+1. Clone o repositório.
+2. Execute o arquivo: `python proj_bank_investment_simulator.py`
+3. Insira os dados solicitados (Aporte, Taxa anual, Prazo).
 
+## 📊 Exemplo de Saída
+![Resultado da Simulação](./result_proj_bank.png)
